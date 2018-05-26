@@ -1,0 +1,10 @@
+<div class="home2">
+<h1 class="showreview">See for yourself!</h1>
+<% @yelpits.each do |yelpit|%>
+<%= link_to  "Yelpit Review Page", new_yelpit_path%>
+<%= link_to "Delete", yelpit_path(yelpit.id), method: :delete %>
+<h3 class="center"><%= yelpit.restaurant %></h3>
+<h4 class="center"><%= yelpit.review %></h4>
+<h4 class="center"><%= yelpit.rating %></h4>
+<% end %>
+</div>

@@ -1,0 +1,13 @@
+<h1>YelpIt!</h1>
+<div>
+  <div>
+    <div>
+      <p>Restaurant: <%= @yelpit.restaurant %></p>
+      <p>Review: <%= @yelpit.review %></p>
+      <p>Rating: <%= @yelpit.rating %></p>
+    </div>
+    <div>
+      <%= link_to 'Delete', yelpit_path(@yelpit.id), method: :delete %>
+      <%= link_to 'Back', yelpit_path %>
+    </div>
+  </div>

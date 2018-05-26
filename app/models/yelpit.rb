@@ -1,0 +1,2 @@
+class Yelpit < ApplicationRecord
+end
